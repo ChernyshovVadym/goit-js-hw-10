@@ -8,9 +8,9 @@ function delayFunction(delay, state) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (state === 'fulfilled') {
-                resolve(✅ Fulfilled promise in ${delay}ms);
+                resolve(`✅ Fulfilled promise in ${delay}ms`);
             } else {
-                reject(❌ Rejected promise in ${delay}ms);
+                reject(`❌ Rejected promise in ${delay}ms`);
             }
         }, delay);
     });
