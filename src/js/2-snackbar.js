@@ -27,7 +27,7 @@ form.addEventListener('submit', e => {
             console.log(result);
             iziToast.success({
                 title: '',
-                message: ${result},
+                message: `${result}`,
                 position: 'topRight',
             });
         })
@@ -35,7 +35,7 @@ form.addEventListener('submit', e => {
             console.log(err);
             iziToast.error({
                 title: '',
-                message: ${err},
+                message:` ${err}`,
                 position: 'topRight',
             });
         });
